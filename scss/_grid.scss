@@ -16,6 +16,11 @@
   display: flex;
 }
 
+.reversed {
+    flex-direction: row-reverse;
+    // flex-wrap: wrap-reverse;
+}
+
 .to-end {
   justify-content: flex-end;
 }

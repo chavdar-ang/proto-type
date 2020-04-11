@@ -15,6 +15,9 @@
 .split, .fl {
   display: flex; }
 
+.reversed {
+  flex-direction: row-reverse; }
+
 .to-end {
   justify-content: flex-end; }
 
@@ -99,3 +102,6 @@ body {
   line-height: 2;
   border-radius: 3px;
   margin: 4px; }
+
+.centered {
+  text-align: center; }
