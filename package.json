@@ -1,0 +1,19 @@
+{
+  "name": "proto-type",
+  "version": "1.0.0",
+  "description": "SCSS framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch scss/base.scss css/app.css"
+  },
+  "keywords": [
+    "css",
+    "framework"
+  ],
+  "author": "Chavdar Angelov",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^4.13.1"
+  }
+}

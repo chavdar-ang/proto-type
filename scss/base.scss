@@ -1,0 +1,30 @@
+@import "_grid", "_sections";
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;1,400&display=swap");
+
+body {
+  font-family: "Rubik", sans-serif;
+  font-size: 14px;
+}
+
+.container {
+  border: 1px dashed darkkhaki;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.bg-alt {
+  background-color: #f4f5f7;
+}
+
+.tag {
+  background-color: rgb(192, 182, 242);
+  color: rgb(64, 50, 148);
+  height: 20px;
+  line-height: 2;
+  border-radius: 3px;
+  margin: 4px;
+}
