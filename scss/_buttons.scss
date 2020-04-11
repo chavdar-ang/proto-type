@@ -1,0 +1,15 @@
+.btn {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+
+  &.alt {
+      border: 2px solid #4caf50;
+      color: #4caf50;
+      background-color: transparent;
+  }
+}

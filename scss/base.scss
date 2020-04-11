@@ -1,4 +1,4 @@
-@import "_grid", "_sections";
+@import "_buttons", "_grid", "_sections";
 @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;1,400&display=swap");
 
 body {
@@ -12,12 +12,17 @@ body {
   max-width: 1200px;
 }
 
-.d-flex {
+.flex {
   display: flex;
 }
 
 .bg-alt {
   background-color: #f4f5f7;
+}
+
+.nav > li {
+  display: inline-block;
+  margin-right: 5px;
 }
 
 .tag {

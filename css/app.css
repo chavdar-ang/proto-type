@@ -1,36 +1,64 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;1,400&display=swap");
-.flex {
+.btn {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block; }
+  .btn.alt {
+    border: 2px solid #4caf50;
+    color: #4caf50;
+    background-color: transparent; }
+
+.split, .fl {
   display: flex; }
 
-.row {
-  display: flex;
-  flex-wrap: wrap; }
+.to-end {
+  justify-content: flex-end; }
 
-.c {
+.to-start {
+  justify-content: flex-start; }
+
+.to-mid {
+  align-items: center; }
+
+.around {
+  justify-content: space-around; }
+
+.between {
+  justify-content: space-between; }
+
+.split > div[class^="c-"] {
+  background-color: antiquewhite;
+  margin: 2px; }
+
+.c-auto {
   flex: auto; }
 
-.c1 {
+.c-1 {
   flex: 1; }
 
-.c2 {
+.c-2 {
   flex: 2; }
 
-.c3 {
+.c-3 {
   flex: 3; }
 
-.c4 {
+.c-4 {
   flex: 4; }
 
-.c5 {
+.c-5 {
   flex: 5; }
 
-.c6 {
+.c-6 {
   flex: 6; }
 
-.c7 {
+.c-7 {
   flex: 7; }
 
-.c8 {
+.c-8 {
   flex: 8; }
 
 .sec {
@@ -54,11 +82,15 @@ body {
   margin: 0 auto;
   max-width: 1200px; }
 
-.d-flex {
+.flex {
   display: flex; }
 
 .bg-alt {
   background-color: #f4f5f7; }
+
+.nav > li {
+  display: inline-block;
+  margin-right: 5px; }
 
 .tag {
   background-color: #c0b6f2;
