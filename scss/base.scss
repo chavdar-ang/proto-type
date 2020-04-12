@@ -10,27 +10,40 @@ body {
   border: 1px dashed darkkhaki;
   margin: 0 auto;
   max-width: 1200px;
-  &::before {
-    content: "container";
-  }
 }
 
-.labeled {
-  &::before {
-    background-color: darkorange;
-    color: white;
-    padding: 3px;
-    margin: 2px 0 2px 2px;
-    display: inline-block;
-    font-size: 12px;
-  }
+// .labeled {
+//   &::before {
+//     background-color: darkorange;
+//     color: white;
+//     padding: 3px;
+//     margin: 2px 0 2px 2px;
+//     display: inline-block;
+//     font-size: 12px;
+//   }
+// }
+
+.bg {
+  color: #74b1be;
+  background-color: #2f3241;
 }
 
 .bg-alt {
   background-color: #f4f5f7;
 }
 
-.nav > li {
-  display: inline-block;
-  margin-right: 5px;
+.navbar {
+  padding: 20px;
 }
+.nav {
+  a { color: white; }
+  > li {
+    display: inline-block;
+    margin-right: 5px;
+  }
+}
+
+.hero {
+  height: 500px;
+}
+

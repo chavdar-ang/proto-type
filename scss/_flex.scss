@@ -18,25 +18,75 @@
 .split {
     display: flex;
 
+    > div {
+        display: flex;
+    }
+
     &.reverse {
         flex-direction: row-reverse;
     }
+
+    &.align,
+    .align {
+        align-items: center;
+    }
+
+    &.end,
+    .end {
+        justify-content: flex-end;
+    }
+    &.center,
+    .center {
+        justify-content: center;
+    }
 }
 
+.flex {
+    display: flex;
+    &.push {
+        align-items: flex-end;
+    }
+
+    &.pull {
+        align-items: flex-start;
+    }
+
+    &.align {
+        align-items: center;
+    }
+
+    &.center {
+        justify-content: center;
+    }
+}
 
 /* STACK */
 .stack {
     display: flex;
+
     flex-direction: column;
+
     &.reverse {
         flex-direction: column-reverse;
     }
 }
 
 /* Rows & columns */
-.c1 { flex: 1; }
-.c2 { flex: 2; }
-.c3 { flex: 3; }
-.c4 { flex: 4; }
-.c5 { flex: 5; }
-
+.c {
+    flex: auto;
+}
+.c1 {
+    flex: 1;
+}
+.c2 {
+    flex: 2;
+}
+.c3 {
+    flex: 3;
+}
+.c4 {
+    flex: 4;
+}
+.c5 {
+    flex: 5;
+}
