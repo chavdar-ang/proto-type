@@ -1,4 +1,4 @@
-@import "_reset", "_buttons", "_grid", "_flex", "_sections";
+@import "_reset", "_typography", "_utilities", "_buttons", "_grid", "_flex", "_sections";
 @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;1,400&display=swap");
 
 body {
@@ -44,6 +44,8 @@ body {
 }
 
 .hero {
+  background-color: cornflowerblue;
+  color: white;
   height: 500px;
 }
 

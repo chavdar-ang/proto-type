@@ -1,6 +1,6 @@
 // test box
 .box {
-    flex: 1; // default
+    // flex: 1; // default
     margin: 2px;
     background-color: lightcoral;
     border: 1px solid crimson;
@@ -16,13 +16,14 @@
 
 /* SPLIT */
 .split {
+    border: 1px dashed salmon;
     display: flex;
 
     > div {
         display: flex;
     }
 
-    &.reverse {
+    &.flip {
         flex-direction: row-reverse;
     }
 
@@ -38,6 +39,16 @@
     &.center,
     .center {
         justify-content: center;
+    }
+
+    &.around,
+    .around {
+        justify-content: space-around;
+    }
+
+    &.between,
+    .between {
+        justify-content: space-between;
     }
 }
 
@@ -66,7 +77,7 @@
 
     flex-direction: column;
 
-    &.reverse {
+    &.flip {
         flex-direction: column-reverse;
     }
 }

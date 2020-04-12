@@ -46,6 +46,27 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+h1 {
+  font-size: 4.6rem; }
+
+h2 {
+  font-size: 3.6rem; }
+
+h3 {
+  font-size: 2.8rem; }
+
+h4 {
+  font-size: 2.2rem; }
+
+h5 {
+  font-size: 1.8rem; }
+
+h6 {
+  font-size: 1.6rem; }
+
+.text-center {
+  text-align: center; }
+
 .btn {
   display: inline-block;
   padding: 16px 24px;
@@ -61,7 +82,6 @@ table {
   border-radius: 3px; }
 
 .box {
-  flex: 1;
   margin: 2px;
   background-color: lightcoral;
   border: 1px solid crimson;
@@ -75,10 +95,11 @@ table {
 
 /* SPLIT */
 .split {
+  border: 1px dashed salmon;
   display: flex; }
   .split > div {
     display: flex; }
-  .split.reverse {
+  .split.flip {
     flex-direction: row-reverse; }
   .split.align,
   .split .align {
@@ -89,6 +110,12 @@ table {
   .split.center,
   .split .center {
     justify-content: center; }
+  .split.around,
+  .split .around {
+    justify-content: space-around; }
+  .split.between,
+  .split .between {
+    justify-content: space-between; }
 
 .flex {
   display: flex; }
@@ -105,7 +132,7 @@ table {
 .stack {
   display: flex;
   flex-direction: column; }
-  .stack.reverse {
+  .stack.flip {
     flex-direction: column-reverse; }
 
 /* Rows & columns */
@@ -154,4 +181,6 @@ body {
   margin-right: 5px; }
 
 .hero {
+  background-color: cornflowerblue;
+  color: white;
   height: 500px; }
