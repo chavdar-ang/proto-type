@@ -1,0 +1,42 @@
+// test box
+.box {
+    flex: 1; // default
+    margin: 2px;
+    background-color: lightcoral;
+    border: 1px solid crimson;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &::after {
+        content: "box";
+        color: white;
+    }
+}
+
+/* SPLIT */
+.split {
+    display: flex;
+
+    &.reverse {
+        flex-direction: row-reverse;
+    }
+}
+
+
+/* STACK */
+.stack {
+    display: flex;
+    flex-direction: column;
+    &.reverse {
+        flex-direction: column-reverse;
+    }
+}
+
+/* Rows & columns */
+.c1 { flex: 1; }
+.c2 { flex: 2; }
+.c3 { flex: 3; }
+.c4 { flex: 4; }
+.c5 { flex: 5; }
+

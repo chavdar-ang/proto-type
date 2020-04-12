@@ -1,4 +1,4 @@
-@import "_buttons", "_grid", "_sections";
+@import "_reset", "_buttons", "_grid", "_flex", "_sections";
 @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;1,400&display=swap");
 
 body {
@@ -10,10 +10,20 @@ body {
   border: 1px dashed darkkhaki;
   margin: 0 auto;
   max-width: 1200px;
+  &::before {
+    content: "container";
+  }
 }
 
-.flex {
-  display: flex;
+.labeled {
+  &::before {
+    background-color: darkorange;
+    color: white;
+    padding: 3px;
+    margin: 2px 0 2px 2px;
+    display: inline-block;
+    font-size: 12px;
+  }
 }
 
 .bg-alt {
@@ -23,19 +33,4 @@ body {
 .nav > li {
   display: inline-block;
   margin-right: 5px;
-}
-
-.tag {
-  background-color: rgb(192, 182, 242);
-  color: rgb(64, 50, 148);
-  height: 20px;
-  line-height: 2;
-  border-radius: 3px;
-  margin: 4px;
-}
-
-// text utilities
-.centered
-{
-  text-align: center;
 }

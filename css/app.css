@@ -1,80 +1,106 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;1,400&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
 .btn {
-  background-color: #4caf50;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block; }
-  .btn.alt {
-    border: 2px solid #4caf50;
-    color: #4caf50;
-    background-color: transparent; }
+  display: inline-block;
+  padding: 16px 24px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  user-select: none;
+  background-color: #1074e7;
+  border: 1px solid #1074e7;
+  border-radius: 3px; }
 
-.split, .fl {
-  display: flex; }
-
-.reversed {
-  flex-direction: row-reverse; }
-
-.to-end {
-  justify-content: flex-end; }
-
-.to-start {
-  justify-content: flex-start; }
-
-.to-mid {
+.box {
+  flex: 1;
+  margin: 2px;
+  background-color: lightcoral;
+  border: 1px solid crimson;
+  height: 100px;
+  display: flex;
+  justify-content: center;
   align-items: center; }
+  .box::after {
+    content: "box";
+    color: white; }
 
-.around {
-  justify-content: space-around; }
+/* SPLIT */
+.split {
+  display: flex; }
+  .split.reverse {
+    flex-direction: row-reverse; }
 
-.between {
-  justify-content: space-between; }
+/* STACK */
+.stack {
+  display: flex;
+  flex-direction: column; }
+  .stack.reverse {
+    flex-direction: column-reverse; }
 
-.split > div[class^="c-"] {
-  background-color: antiquewhite;
-  margin: 2px; }
-
-.c-auto {
-  flex: auto; }
-
-.c-1 {
+/* Rows & columns */
+.c1 {
   flex: 1; }
 
-.c-2 {
+.c2 {
   flex: 2; }
 
-.c-3 {
+.c3 {
   flex: 3; }
 
-.c-4 {
+.c4 {
   flex: 4; }
 
-.c-5 {
+.c5 {
   flex: 5; }
-
-.c-6 {
-  flex: 6; }
-
-.c-7 {
-  flex: 7; }
-
-.c-8 {
-  flex: 8; }
-
-.sec {
-  margin: 5px;
-  border: dotted 2px goldenrod; }
-  .sec.header {
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
-  .sec .vc {
-    align-items: center; }
-  .sec .hc {
-    align-items: center; }
 
 body {
   font-family: "Rubik", sans-serif;
@@ -84,9 +110,16 @@ body {
   border: 1px dashed darkkhaki;
   margin: 0 auto;
   max-width: 1200px; }
+  .container::before {
+    content: "container"; }
 
-.flex {
-  display: flex; }
+.labeled::before {
+  background-color: darkorange;
+  color: white;
+  padding: 3px;
+  margin: 2px 0 2px 2px;
+  display: inline-block;
+  font-size: 12px; }
 
 .bg-alt {
   background-color: #f4f5f7; }
@@ -94,14 +127,3 @@ body {
 .nav > li {
   display: inline-block;
   margin-right: 5px; }
-
-.tag {
-  background-color: #c0b6f2;
-  color: #403294;
-  height: 20px;
-  line-height: 2;
-  border-radius: 3px;
-  margin: 4px; }
-
-.centered {
-  text-align: center; }
